@@ -1,0 +1,110 @@
+/* 
+ * Main styles for the Infinite Astrology Hub
+ * These make the website look nice
+ * 
+ * Accessibility first:
+ * - Large fonts for easy reading
+ * - High contrast colors
+ * - Simple layout
+ */
+
+* {
+  /* Remove default margins and padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Use a readable font */
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+  
+  /* Dark background - easier on the eyes */
+  background-color: #0a0e27;
+  color: #f0f0f0;
+  
+  /* Make text larger and easier to read */
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Headings - make them big and clear */
+h1, h2, h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffd700; /* Gold color for astrology feel */
+  font-weight: bold;
+}
+
+/* Links - make them obvious */
+a {
+  color: #87ceeb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+/* Buttons - make them big and easy to click */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ffd700;
+  color: #0a0e27;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffed4e;
+}
+
+button:focus {
+  outline: 3px solid #87ceeb;
+  outline-offset: 2px;
+}
+
+/* Input fields - easy to see and use */
+input, textarea, select {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  background-color: #1a1f3a;
+  color: #f0f0f0;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 3px solid #87ceeb;
+  border-color: #87ceeb;
+}
+
+/* Container - holds content with padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Easy mode - simpler, cleaner layout */
+.easy-mode {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* Accessibility message - let users know about features */
+.accessibility-bar {
+  background-color: #ffd700;
+  color: #0a0e27;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}

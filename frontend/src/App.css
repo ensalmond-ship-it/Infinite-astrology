@@ -1,0 +1,229 @@
+/*
+ * App.css - Specific styles for the main App component
+ * These make the layout look nice and organized
+ */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full screen height */
+}
+
+/* Header at the top */
+.header {
+  background: linear-gradient(135deg, #1a1f3a 0%, #2d2e6e 100%);
+  padding: 30px;
+  text-align: center;
+  border-bottom: 3px solid #ffd700;
+}
+
+.header h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Accessibility controls */
+.accessibility-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.accessibility-controls button {
+  background-color: #87ceeb;
+  color: #0a0e27;
+  font-weight: bold;
+}
+
+.accessibility-controls button:hover {
+  background-color: #b0e0f0;
+}
+
+.accessibility-controls button.active {
+  background-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+/* Welcome section */
+.welcome {
+  background-color: #1a1f3a;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  border-left: 5px solid #ffd700;
+}
+
+.welcome h2 {
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.welcome ul {
+  list-style-position: inside;
+  margin: 20px 0;
+}
+
+.welcome li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Birth form section */
+.birth-form {
+  background-color: #1a1f3a;
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid #ffd700;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.birth-form h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.form-group label .speak-btn {
+  background-color: #87ceeb;
+  color: #0a0e27;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-group label .speak-btn:hover {
+  background-color: #b0e0f0;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  background-color: #0a0e27;
+  color: #f0f0f0;
+}
+
+.form-group input:focus {
+  outline: 3px solid #87ceeb;
+  border-color: #87ceeb;
+  background-color: #151a33;
+}
+
+.form-group input::placeholder {
+  color: #888;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #ffd700;
+  color: #0a0e27;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #ffed4e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.submit-btn:focus {
+  outline: 3px solid #87ceeb;
+}
+
+/* Footer */
+.footer {
+  background-color: #0a0e27;
+  padding: 20px;
+  text-align: center;
+  border-top: 3px solid #ffd700;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Easy mode - larger fonts and simpler layout */
+.app.easy-mode {
+  font-size: 22px;
+}
+
+.app.easy-mode h1 {
+  font-size: 3rem;
+}
+
+.app.easy-mode h2 {
+  font-size: 2.2rem;
+}
+
+.app.easy-mode button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.app.easy-mode .form-group input {
+  font-size: 1.1rem;
+  padding: 18px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .accessibility-controls {
+    flex-direction: column;
+  }
+
+  .accessibility-controls button {
+    width: 100%;
+  }
+
+  .birth-form {
+    padding: 20px;
+  }
+
+  .main-content {
+    padding: 20px 10px;
+  }
+}
